@@ -1,4 +1,6 @@
-public abstract class Person {
+import java.io.Serializable;
+
+public abstract class Person implements Serializable {
     private String vornaame;
     private String nachname;
     private int alter;
@@ -11,5 +13,25 @@ public abstract class Person {
         this.alter = alter;
         this.adresse = adresse;
         this.mail = mail;
+    }
+
+    public String getVornaame() {
+        return vornaame;
+    }
+
+    public String getNachname() {
+        return nachname;
+    }
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public String getMail() {
+        return mail;
     }
 }
